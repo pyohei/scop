@@ -1,6 +1,7 @@
+"""Change snake case variables into camel case."""
 import re
 
-def replace_to_camel(s):
+def _replace_to_camel(s):
     s = s.group(0)
     if '_' not in s:
         return s
@@ -12,7 +13,7 @@ def replace_to_camel(s):
 
 def main(s):
    rrr = re.compile(r'[a-zA-Z_][a-zA-Z_0-9]*', re.MULTILINE | re.DOTALL)
-   return rrr.sub(replace_to_camel, s)
+   return rrr.sub(_replace_to_camel, s)
 
 
 if __name__ == '__main__':
