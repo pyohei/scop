@@ -21,7 +21,6 @@ def www():
     s = request.forms.get('base', '')
     c_str = ''
     if s:
-        print cnv(s)
         c_str = cnv(s)
     return template(HTML_STRING, result=c_str)
 
