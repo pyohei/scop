@@ -8,6 +8,8 @@ def replace_to_camel(s):
     ss = s.split('_')
     sss = ss[0]
     for ssss in ss[1:]:
+        if not ssss:
+            continue
         sss += ssss[0].upper() + ssss[1:]
     return sss
 
@@ -19,6 +21,8 @@ def replace_to_space_camel(s):
     ss = s.split('_')
     sss = ss[0]
     for ssss in ss[1:]:
+        if not ssss:
+            continue
         sss += ' ' + ssss[0].upper() + ssss[1:]
     return sss
 
@@ -33,5 +37,6 @@ if __name__ == '__main__':
     sample_string = """
 test = "hoge_foo" + "var" + "python_ruby"
 too_foo
+tet_
 """
     print main(sample_string)
