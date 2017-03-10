@@ -19,8 +19,7 @@ def replace_to_space_camel(s):
     if '_' not in s:
         return s
     ss = s.split('_')
-    sss = ss[0]
-    for ssss in ss[1:]:
+    for ssss in ss:
         if not ssss:
             continue
         sss += ' ' + ssss[0].upper() + ssss[1:]
