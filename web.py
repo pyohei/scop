@@ -34,6 +34,8 @@ HTML_STRING = """
 def www():
     s = request.forms.get('base', '')
     c_str = ''
+    # Load All converter list from converter directory?
+    # Fix string.
     if s:
         c_str = cnv(s)
     embeded_texts = {'base': s,
