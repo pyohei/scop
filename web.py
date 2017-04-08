@@ -1,6 +1,7 @@
 from bottle import route, run, request, template
-from converter_ import main as cnv
+#from converter_ import main as cnv
 from converter import load_choices
+from converter import convert
 
 
 HTML_STRING = """
@@ -40,10 +41,10 @@ HTML_STRING = """
 @route('/', method=['GET', 'POST'])
 def www():
     s = request.forms.get('base', '')
-    # c = request.forms.get('choice', '')
+    c = request.forms.get('choice', '')
     c_str = ''
     if s:
-        c_str = cnv(s)
+        c_str = convert(s, c)
     embeded_texts = {'base': s,
                      'result': c_str,
                      'choices': load_choices()}
