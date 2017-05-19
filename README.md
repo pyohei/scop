@@ -5,7 +5,7 @@ There are some features in this tool.
 
 * Simple protocol
 * Simple web interface
-* Customize this code as you want
+* Customize this code as you want!
 
 
 ## Usage
@@ -14,6 +14,17 @@ For this tool, you should prepare python(2.7) environment.
 
 Clone this repository.  
 And you can excecute this command.  
+
+```bash
+python web.py
+```
+
+## Install
+
+You can install this script as follows.
+```bash
+git clone https://github.com/pyohei/scop.git
+```
 
 ## Customize
 
