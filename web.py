@@ -1,3 +1,4 @@
+"""Simple string converter main porcess."""
 from bottle import route, run, request, template
 from converter import load_choices
 from converter import convert
