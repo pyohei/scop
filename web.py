@@ -1,5 +1,4 @@
 from bottle import route, run, request, template
-#from converter_ import main as cnv
 from converter import load_choices
 from converter import convert
 
