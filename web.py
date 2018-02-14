@@ -18,14 +18,18 @@ HTML_STRING = """
   <body>
     <h1>Simple String Converter</h1>
     <form method="POST" action="/">
+      <div class="container box-block">
         <div class="box">
             <select name="choice">
             % for c in choices:
                 <option value="{{c}}">{{c}}</option>
             % end
             </select>
+        </div>
+        <div class="box">
             <input type="submit" value="convert">
         </div>
+      </div>
       <div class="container box-block">
         <div class="box">
             Before
