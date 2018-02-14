@@ -8,15 +8,17 @@ HTML_STRING = """
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="./static/milligram.min.css">
+    <style type="text/css">
+    <!--
+      .box {display: inline-block;}
+      .box-block {display: block;}
+      .input-area {width: 300px; height: 600px;}
+    -->
+    </style>
   <body>
     <h1>Simple String Converter</h1>
     <form method="POST" action="/">
-      <div>
-        <div>
-            Before
-            <textarea name="base" cols=50 rows=40>{{base}}</textarea>
-        </div>
-        <div>
+        <div class="box">
             <select name="choice">
             % for c in choices:
                 <option value="{{c}}">{{c}}</option>
@@ -24,9 +26,14 @@ HTML_STRING = """
             </select>
             <input type="submit" value="convert">
         </div>
-        <div>
+      <div class="container box-block">
+        <div class="box">
+            Before
+            <textarea name="base" class="input-area" cols=20 rows="50">{{base}}</textarea>
+        </div>
+        <div class="box">
             After
-            <textarea name="result" cols=50 rows=40>{{result}}</textarea>
+            <textarea class="input-area" name="result" cols=20 rows=50>{{result}}</textarea>
         </div>
       </div>
     </form>
