@@ -13,12 +13,13 @@ HTML_STRING = """
       .box {display: inline-block;}
       .box-block {display: block;}
       .input-area {width: 300px; height: 600px;}
+      .center {display: inline-block; text-align: center;}
     -->
     </style>
   <body>
-    <h1>Simple String Converter</h1>
     <form method="POST" action="/">
-      <div class="container box-block">
+      <div class="container box-block center">
+        <h1>Simple String Converter</h1>
         <div class="box">
             <select name="choice">
             % for c in choices:
@@ -30,14 +31,22 @@ HTML_STRING = """
             <input type="submit" value="convert">
         </div>
       </div>
-      <div class="container box-block">
+      <div class="container box-block center">
         <div class="box">
+          <div>
             Before
+          </div>
+          <div>
             <textarea name="base" class="input-area" cols=20 rows="50">{{base}}</textarea>
+          </div>
         </div>
         <div class="box">
+          <div>
             After
+          </div>
+          <div>
             <textarea class="input-area" name="result" cols=20 rows=50>{{result}}</textarea>
+          </div>
         </div>
       </div>
     </form>
