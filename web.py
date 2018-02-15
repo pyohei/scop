@@ -57,6 +57,10 @@ HTML_STRING = """
 
 @route('/', method=['GET', 'POST'])
 def www():
+    """Main page url process.
+    
+    This system pass only this url.
+    """
     s = request.forms.get('base', '')
     c = request.forms.get('choice', '')
     c_str = ''
@@ -70,6 +74,11 @@ def www():
 
 @route('/static/<file_path:path>')
 def static(file_path):
+    """Static file url setting.
+
+    This route uses for static file(css).
+    """
     return static_file(file_path, root='./static')
 
+# Run
 run(host='127.0.0.1', port='9999', debug=True, reloader=True)
