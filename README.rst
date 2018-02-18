@@ -8,17 +8,6 @@ tool.
 -  Simple web interface
 -  Customize this code as you want!
 
-Usage
------
-
-For this tool, you should prepare python(2.7) environment.
-
-Clone this repository. And you can excecute this command.
-
-.. code:: bash
-
-    python web.py
-
 Install
 -------
 
@@ -28,13 +17,27 @@ You can install this script as follows.
 
     git clone https://github.com/pyohei/scop.git
 
+Usage
+-----
+
+Clone this repository. And you can excecute this command.
+
+.. code:: bash
+
+    python web.py
+
 Customize
 ---------
 
-This tool has protocol. You can add your original module.
+You can add your original module if you want.
+The way to create is below.
 
-If you want to add modules into my repository, please give me Pull
-Request.
+# Create module under converter directory
+# add convert module having first argument 
+
+After you can add your module, you can see your original converter from browser.
+
+I you want to add modules into my repository, please give me Pull Request :)
 
 Licence
 -------
