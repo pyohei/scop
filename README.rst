@@ -10,7 +10,7 @@ SCOP is the simple string convert tool written with Python. There are some featu
 Samle
 -----
 
-.. image:: https://imgur.com/a/vZDmE
+.. image:: https://i.imgur.com/Yourjqg.png
 
 Install
 -------
