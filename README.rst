@@ -1,11 +1,16 @@
 SCOP(String Converter of Python)
 ================================
 
-SCOP is the simple string convert tool. There are some features in this tool.
+SCOP is the simple string convert tool written with Python. There are some features in this tool.
 
 -  Simple protocol
 -  Simple web interface
 -  Enable to customize this code as you want!
+
+Samle
+-----
+
+.. image:: https://imgur.com/a/vZDmE
 
 Install
 -------
