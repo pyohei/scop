@@ -1,3 +1,4 @@
+"""Converter from markdown into reStructuredText"""
 import pypandoc
 
 def convert(string):

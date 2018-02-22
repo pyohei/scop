@@ -1,5 +1,5 @@
+"""Convert snake case into Camel case."""
 import re
-
 
 def convert(string):
     rrr = re.compile(r'\[?\(?[a-zA-Z_][a-zA-Z_0-9]*', re.MULTILINE | re.DOTALL)

@@ -1,9 +1,14 @@
-"""Initial for converter operation."""
+"""Initial for converter operation.
+
+This script is base of converter.
+The selection of converter is created by this script.
+"""
 
 import os
 import glob
 import importlib 
 
+# Ignore script as converter.
 IGNORE_FILE = ['__init__']
 
 def load_choices():

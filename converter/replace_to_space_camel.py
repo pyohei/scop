@@ -1,3 +1,7 @@
+"""Convert snake case into camel case with space.
+
+Samle: `test_hoge_bar` --> `Test Hoge Bar`
+"""
 import re
 
 
