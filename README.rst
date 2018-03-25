@@ -36,6 +36,12 @@ After clone this repository, you can excecute by the below command.
 
     python web.py
 
+Environment
+-----------
+
+- Python 2.7.10
+- Python 3.6.1
+
 Customize
 ---------
 
