@@ -62,7 +62,7 @@ def www():
 
     This system pass only this url.
     """
-    s = request.forms.get("base", "")
+    s = request.forms.base
     c = request.forms.get("choice", "")
     c_str = ""
     if s:
