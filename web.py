@@ -7,6 +7,7 @@ from converter import convert
 HTML_STRING = """
 <html>
   <head>
+    <meta http-equiv="content-type" charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./static/milligram.min.css">
     <style type="text/css">
     <!--
