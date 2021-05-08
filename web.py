@@ -55,30 +55,29 @@ HTML_STRING = """
 """
 
 
-@route('/', method=['GET', 'POST'])
+@route("/", method=["GET", "POST"])
 def www():
     """Main page url process.
-    
+
     This system pass only this url.
     """
-    s = request.forms.get('base', '')
-    c = request.forms.get('choice', '')
-    c_str = ''
+    s = request.forms.get("base", "")
+    c = request.forms.get("choice", "")
+    c_str = ""
     if s:
         c_str = convert(s, c)
-    embeded_texts = {'base': s,
-                     'result': c_str,
-                     'choices': load_choices()}
+    embeded_texts = {"base": s, "result": c_str, "choices": load_choices()}
     return template(HTML_STRING, embeded_texts)
 
 
-@route('/static/<file_path:path>')
+@route("/static/<file_path:path>")
 def static(file_path):
     """Static file url setting.
 
     This route uses for static file(css).
     """
-    return static_file(file_path, root='./static')
+    return static_file(file_path, root="./static")
+
 
 # Run
-run(host='127.0.0.1', port='9999', debug=True, reloader=True)
+run(host="127.0.0.1", port="9999", debug=True, reloader=True)
