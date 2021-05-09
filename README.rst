@@ -39,8 +39,9 @@ After clone this repository, you can excecute by the below command.
 Environment
 -----------
 
-- Python 2.7.10
-- Python 3.6.1
+- Python 2.7.x
+- Python 3.6.x
+- Python 3.8.x
 
 Customize
 ---------
